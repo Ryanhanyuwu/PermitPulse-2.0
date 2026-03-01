@@ -90,9 +90,9 @@ st.caption("Sugar Land open data integration: Building Permits + Traffic Informa
 
 with st.sidebar:
     st.header("Data files")
-    permits_file = st.text_input("Permits CSV path", r"C:\Users\qingw\Downloads\PermitPulse_2_Full_Submission_Package (2)\PermitPulse_2_Full_Submission_Package\PermitPulse_2.0_SugarLand_OpenData\data\permits.csv")
-    traffic_info_file = st.text_input("Traffic Information CSV path", r"C:\Users\qingw\Downloads\PermitPulse_2_Full_Submission_Package (2)\PermitPulse_2_Full_Submission_Package\PermitPulse_2.0_SugarLand_OpenData\data\traffic_information.csv")
-    traffic_events_file = st.text_input("Traffic Events CSV path", r"C:\Users\qingw\Downloads\PermitPulse_2_Full_Submission_Package (2)\PermitPulse_2_Full_Submission_Package\PermitPulse_2.0_SugarLand_OpenData\data\traffic_events.csv")
+    permits_file = "data/permits.csv"
+    traffic_info_file = "data/traffic_information.csv"
+    traffic_events_file = "data/traffic_events.csv"
     st.caption("Replace the traffic CSVs with official portal exports; keep/rename columns to match template headers.")
 
 permits = load_permits(permits_file)
