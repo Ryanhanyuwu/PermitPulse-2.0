@@ -89,11 +89,9 @@ st.title("PermitPulse 2.0 — Development × Traffic Intelligence")
 st.caption("Sugar Land open data integration: Building Permits + Traffic Information + Traffic Events.")
 
 with st.sidebar:
-    st.header("Data files")
     permits_file = "data/permits.csv"
     traffic_info_file = "data/traffic_information.csv"
     traffic_events_file = "data/traffic_events.csv"
-    st.caption("Replace the traffic CSVs with official portal exports; keep/rename columns to match template headers.")
 
 permits = load_permits(permits_file)
 tinfo = load_traffic_information(traffic_info_file)
