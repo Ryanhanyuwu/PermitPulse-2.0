@@ -189,7 +189,7 @@ with a:
     st.dataframe(score.sort_values("urban_stress", ascending=False).head(10), use_container_width=True, height=360)
 with b:
     st.write("**Components**")
-    st.dataframe(score.sort_values("dpi", ascending=False).head(10)[["zip5","permit_count","valuation_sum","dpi","event_count"]],
+    st.dataframe(score.sort_values("dpi", ascending=False).head(10)[["zip5","permit_count","valuation_sum","dpi","event_count", "tsi", "urban_stress"]],
                  use_container_width=True, height=360)
 
 st.divider()
